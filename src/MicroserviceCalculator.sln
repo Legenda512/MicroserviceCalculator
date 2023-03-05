@@ -3,9 +3,46 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{069E2F3B-01E3-446B-870B-A7F0DCCE27D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.Bus", "Infra.Bus", "{3B41EB42-6A29-4EE4-B96D-01E4A165BE8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.IoC", "Infra.IoC", "{F3FF95A6-790E-4B3B-9442-C8F33F911A63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{611EE646-3706-4C42-9386-44184B4DF994}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceCalculator.Domain.Core", "Domain\MicroserviceCalculator.Domain.Core\MicroserviceCalculator.Domain.Core.csproj", "{653000DD-2088-443A-BD37-E0AC12361AC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceCalculator.Infra.Bus", "Infra.Bus\MicroserviceCalculator.Infra.Bus\MicroserviceCalculator.Infra.Bus.csproj", "{C6BD2DAE-E54B-4186-B836-0BB4D05F8D54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceCalculator.Infra.IoC", "Infra.IoC\MicroserviceCalculator.Infra.IoC\MicroserviceCalculator.Infra.IoC.csproj", "{2B474193-8A98-456A-AA5D-0B8D660BC089}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{653000DD-2088-443A-BD37-E0AC12361AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{653000DD-2088-443A-BD37-E0AC12361AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{653000DD-2088-443A-BD37-E0AC12361AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{653000DD-2088-443A-BD37-E0AC12361AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6BD2DAE-E54B-4186-B836-0BB4D05F8D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6BD2DAE-E54B-4186-B836-0BB4D05F8D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6BD2DAE-E54B-4186-B836-0BB4D05F8D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6BD2DAE-E54B-4186-B836-0BB4D05F8D54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B474193-8A98-456A-AA5D-0B8D660BC089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B474193-8A98-456A-AA5D-0B8D660BC089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B474193-8A98-456A-AA5D-0B8D660BC089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B474193-8A98-456A-AA5D-0B8D660BC089}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{653000DD-2088-443A-BD37-E0AC12361AC7} = {069E2F3B-01E3-446B-870B-A7F0DCCE27D5}
+		{C6BD2DAE-E54B-4186-B836-0BB4D05F8D54} = {3B41EB42-6A29-4EE4-B96D-01E4A165BE8C}
+		{2B474193-8A98-456A-AA5D-0B8D660BC089} = {F3FF95A6-790E-4B3B-9442-C8F33F911A63}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7058BD5B-ADB8-4D18-B112-939D67341C6F}
